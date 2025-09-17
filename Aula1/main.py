@@ -7,12 +7,12 @@ pyautogui.PAUSE= 0.5
 
 # abrir  o navegador chrome
 pyautogui.press("win")
-pyautogui.write("chrome")
-pyautogui.press("enter")
+pyautogui.write("chrom")
+pyautogui.press("ent")
 
 # entrar no site do sistema
 pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
-pyautogui.press("enter")
+pyautogui.press("ent")
 
 # o site pode  demorar para carregar
 time.sleep(2) # apenas nesse lugar eu quero que espere
@@ -23,9 +23,9 @@ time.sleep(2) # apenas nesse lugar eu quero que espere
 pyautogui.click(x=815, y=365)
 pyautogui.write("teste@gmail.com")
 pyautogui.press("tab")
-pyautogui.write("teste 123")
+pyautogui.write("teste 256")
 pyautogui.press("tab")
-pyautogui.press("enter")
+pyautogui.press("ent")
 
 time.sleep(2) # garantir que o site carregue
 
@@ -53,7 +53,7 @@ for linha in tabela.index: # se eu quiser pegar a lista com todas colunas,tabela
     pyautogui.press("tab")
     pyautogui.write(tabela.loc[linha, "obs"])
     pyautogui.press("tab")
-    pyautogui.press("enter") # cadastra o produto (botao enviar)
+    pyautogui.press("ent") # cadastra o produto (botao enviar)
     pyautogui.scroll(5000) # preciso usar o comando pyoutogui.scroll para voltar para inicio tela
      # Passo 5: Repetir o processo de cadastro até o fim
    
