@@ -1,21 +1,9 @@
-# Passo a passo do projeto
 
-# 1- abrir o sistema da empresa
-# https://dlp.hashtagtreinamentos.com/python/intensivao/login
-
-# pyautogui,biblioteca de automização, permite automatizar teclado,mouse,monitor e etc.
-#Para instalar pip install pyautogui
-import pyautogui # type: ignore
+import pyautogui 
 import time
 
-pyautogui.PAUSE= 0.5 # uma pausa de 0.5 segundos a cada comando do pyautogui,
-                     # e garante que um comando não vai atropelar o outro.
+pyautogui.PAUSE= 0.5 
 
-#pyautogui.click # clicar com o botão do mouse  (clicks= 2) (button= "left", ou rigth, ou middle)
-#pyautogui.write # escrever um textp
-#pyautogui.press # pressionar uma tecla do teclado, enter, tab, esc...
-#pyautogui.hotkey # apertar um conjunto de teclas
-#pyoutogui.posicion #  captura a posição do mouse
 
 # abrir  o navegador chrome
 pyautogui.press("win")
@@ -33,9 +21,9 @@ time.sleep(2) # apenas nesse lugar eu quero que espere
 # 2. Fazer login
 # preciso usar o comando pyoutogui.posicion,para pegar a posição da barra e clicar no campo email.
 pyautogui.click(x=815, y=365)
-pyautogui.write("testealgumacoisa@gmail.com")
+pyautogui.write("teste@gmail.com")
 pyautogui.press("tab")
-pyautogui.write("qualquer coisa 123")
+pyautogui.write("teste 123")
 pyautogui.press("tab")
 pyautogui.press("enter")
 
